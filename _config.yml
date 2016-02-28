@@ -4,7 +4,7 @@
 title: SOLID.
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
-baseurl: "/myjavablog/" #important: start with /
+baseurl: "/myjavablog" #important: start with /
 url: "http://http://rammygit.github.io" # the base hostname & protocol for your site
 
 # Build settings
