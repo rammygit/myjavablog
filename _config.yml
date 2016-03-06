@@ -102,6 +102,13 @@ clients:
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
 about: "Send mail to info@injury-care.com with questions or comments about this web site."
 
+#client location details.
+clientlocations:
+  - lines: 
+    - "West: 3955 Dixie Hwy Louisville KY 40216. Phone: 502-447-2222"
+    - "East: 1939 Goldsmith Ln 130 Louisville KY 40218. Phone: 502-447-2222"
+    - "South: 4209 Outer Loop Louisville KY 40219. Phone: 502-447-2222"
+
 # Testimonial content. Shown on Home and About page. 
 testimonial:
     message: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."

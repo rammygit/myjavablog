@@ -2,9 +2,14 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
-                <h4>About</h4>
+                <h4>Locations</h4>
                 <div class="hline-w"></div>
-                <p>{{ site.about }}</p>
+                <p>
+                    {% for line in site.clientlocations.first.lines %}
+                        {{ line }} <br>
+                    {% endfor %}
+                </p>
+                
             </div>
             <div class="col-lg-4">
                 <h4>Social Links</h4>
@@ -16,13 +21,9 @@
                 </p>
             </div>
             <div class="col-lg-4">
-                <h4>Our Bunker</h4>
+                <h4>Reach out</h4>
                 <div class="hline-w"></div>
-                <p>
-                    {% for line in site.address.first.lines %}
-                        {{ line }} <br>
-                    {% endfor %}
-                </p>
+                <p>{{ site.about }}</p>
             </div>
         </div><! --/row -->
     </div><! --/container -->
