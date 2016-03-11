@@ -1,0 +1,9 @@
+<div class="col-lg-4">
+	{% for project in site.categories['project'] limit:include.limit %}
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    	<img src="{{ "/assets/img/project/" | prepend: site.baseurl }}{{ project.img }}" alt="">
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            {% endfor %}
+</div>

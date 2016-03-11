@@ -2,6 +2,10 @@
 layout: blog
 title: Neurology
 permalink: /blog/
+carousel:
+- single01.jpg
+- single02.jpg
+- single03.jpg
 ---
 
 <div class="container mtb">
@@ -10,23 +14,28 @@ permalink: /blog/
         <! -- BLOG POSTS LIST -->
         <div class="col-lg-8">
 
-            {% for post in site.categories['blog'] %}
-                <! -- Blog Post -->
-                <a href="{{ post.url | prepend: site.baseurl }}">
-                    <img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ post.img }}">
-                </a>    
-                <a href="{{ post.url | prepend: site.baseurl }}"><h3 class="ctitle">{{ post.title }}</h3></a>
-                <p><csmall>{{ post.date | date: "%b %-d, %Y" }}. | By: {{ post.author }}</csmall></p>
-                {{ post.excerpt }}
-                <p><a href="{{ post.url | prepend: site.baseurl }}">[Read More]</a></p>
-                <div class="hline"></div>
+            <p>Dr. Blaine Lisner, a neurologist, and former neurosurgeon completed his training in Neurology at Ohio State University and additional training in Neurophysiology from the Mayo Clinic. </p>
 
-                <div class="spacing"></div>
-            {% endfor %}
+<p>He treats a variety of neurological ailments, including:
+bullet  Cognitive and behavioral disorders
+bullet  Memory loss including Mild Cognitive Impairment and Alzheimer's disease
+bullet  Frontotemporal dementia syndromes including Pick's disease
+bullet  Parkinsonian dementia syndromes (Lewy Body disease)
+bullet  Head injury and post-concussion syndromes
+bullet  Migraine disorders and atypical pain syndromes (Dejerine-Roussy and trigeminal neuralgia)
+bullet  Multiple sclerosis and variants, including confirmation of the diagnosis
+bullet  Pain Management including Epidural Steroid Injections, Facet Blocks, Nerve Blocks
+bullet  Neurological Testing including NCV/ EMG </p>
+
+<p>He also treats most general neurology complaints, including stroke, epilepsy, sleep disorders and neck and back injury. In conjunction with Physical Therapy, he treats patients injured in Motor Vehicle Accident as well as  Industrial and Workmen's Compensation patients.</p>
 
         </div><! --/col-lg-8 -->
 
-        {% include sidebar.html %}
+       {% comment %}
+        {% include neurology_sidebar.html %} 
+       {% endcomment %}
+
+       {% include neurology_carousel.html %} 
 
     </div><! --/row -->
 </div><! --/container -->
